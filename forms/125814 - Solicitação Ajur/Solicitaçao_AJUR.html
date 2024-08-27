@@ -174,6 +174,7 @@
 										</option>
 										<option value="Parecer Jurídico">Parecer Jurídico</option>
 										<option value="Apostilamento">Apostilamento</option>
+										<option value="Distrato">Distrato</option>
 										<option value="Outros">Outros</option>
 									</select>
 								</div>
@@ -312,7 +313,7 @@
 											<li><strong><u>Parecer Jurídico</u></strong></li>
 											<ol>
 												<li><strong>No campo "Descrição e Justificativa do Ato":</strong></li>
-												<ol><strong>1.2</strong> Descrever a necessidade de parecer jurídico contendo a questão jurídica passível de análise ou esclarecimento da controvérsia; motivo ou fato da demanda.</ol>
+												<ol><strong>1.1</strong> Descrever a necessidade de parecer jurídico contendo a questão jurídica passível de análise ou esclarecimento da controvérsia; motivo ou fato da demanda.</ol>
 												<li><strong><u>OBRIGATÓRIO ANEXAR:</u></strong></li>
 												<ol><strong>2.1</strong> Documentação acessória que complemente a solicitação. Exemplos: cartas solicitando reajuste sem a previsão no contrato, aditivos ao contrato da questão, propostas de fornecedores, etc.</ol>
 												<ol><strong>2.2</strong> Robustecer justificativa para deliberação em Reunião da DIREX, no aspecto da regularidade ou legalidade da relevante motivação</ol>
@@ -333,10 +334,22 @@
 											<li><strong><u>Observar no RLCSS o rol exemplificativo e sua aplicabilidade ao caso concreto.</u></strong></li>
 											<ol>
 												<li><strong>No campo "Descrição e Justificativa do Ato":</strong></li>
-												<ol><strong>1.2</strong> Informar a necessidade do registro em apostila, com a manifestação entre as partes. </ol>
+												<ol><strong>1.1</strong> Informar a necessidade do registro em apostila, com a manifestação entre as partes. </ol>
 												<li><strong><u>OBRIGATÓRIO ANEXAR:</u></strong></li>
 												<ol><strong>2.1</strong> Solicitação da Contratada ou comunicação expressa da necessidade identificada para o apostilamento;</ol>
 												<ol><strong>2.2</strong> Contrato original e aditivos firmados.</ol>
+											</ol>
+										</div>
+										<div id="cardDistrato">
+											<li><strong><u>Distrato</u></strong></li>
+												<li><strong>No campo "Descrição e Justificativa do Ato":</strong></li>
+												<ol><strong>1.1</strong> informar a necessidade do termo de distrato, com a manifestação entre as partes, indicando o motivo por iniciativa do SEBRAE ou do contratado, 
+													se existe pendência para pagamento, de execução ou entrega para cumprimento. Se será aplicada alguma penalidade. </ol>
+												<li><strong><u>OBRIGATÓRIO ANEXAR:</u></strong></li>
+												<ol><strong>2.1</strong> Comunicação com a manifestação entre as partes expressando a motivação identificada para o distrato;</ol>
+												<ol><strong>2.2</strong> Contrato original e aditivos firmados;</ol>
+												<ol><strong>2.2</strong> Se for aplicada penalidade, juntar a deliberação em Reunião DIREX;</ol>
+												<ol><strong>2.2</strong> Outros documentos complementares, se houver.</ol>
 											</ol>
 											<ol>
 												
@@ -877,7 +890,7 @@
 					document.getElementsByClassName('cke_editable cke_editable_themed cke_contents_ltr cke_show_borders')[0].contentEditable = false
 				}
 				else {
-					if (Now_state == 18 || Now_state == 13 || Now_state == 14 || Now_state == 15 || Now_state == 16 || Now_state == 51 || Now_state == 55 || Now_state == 54 || Now_state == 5 || Now_state == 55 || Now_state == 181 || Now_state == 107 || Now_state == 186) {
+					if (Now_state == 18 || Now_state == 13 || Now_state == 14 || Now_state == 15 || Now_state == 16 || Now_state == 51 || Now_state == 55 || Now_state == 54 || Now_state == 5 || Now_state == 55 || Now_state == 181 || Now_state == 107 || Now_state == 186 || Now_state == 190) {
 						editor = FLUIGC.richeditor('_detalhes');
 						editor.setData(document.getElementById("detalhes").value)
 					}

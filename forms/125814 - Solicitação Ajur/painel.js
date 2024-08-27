@@ -196,6 +196,7 @@ function secFunc(tipo) {
         document.getElementById('ot').style.display = 'none';
         document.getElementById('td').style.display = 'none';
         document.getElementById('cardApost').style.display = 'none';
+        document.getElementById('cardDistrato').style.display = 'none';
         somarValores()
     }
     else if (tipo == 'Portaria') {
@@ -218,6 +219,7 @@ function secFunc(tipo) {
         document.getElementById('ot').style.display = 'none';
         document.getElementById('td').style.display = 'none';
         document.getElementById('cardApost').style.display = 'none';
+        document.getElementById('cardDistrato').style.display = 'none';
     }
     else if (tipo == 'Atestado de Capacidade Técnica') {
         document.getElementById('num_direx').style.display = 'none';
@@ -239,6 +241,7 @@ function secFunc(tipo) {
         document.getElementById('ot').style.display = 'none';
         document.getElementById('td').style.display = 'none';
         document.getElementById('cardApost').style.display = 'none';
+        document.getElementById('cardDistrato').style.display = 'none';
     }
     else if (tipo == 'Resolução') {
         document.getElementById('num_direx').style.display = 'block';
@@ -260,6 +263,7 @@ function secFunc(tipo) {
         document.getElementById('ot').style.display = 'none';
         document.getElementById('td').style.display = 'none';
         document.getElementById('cardApost').style.display = 'none';
+        document.getElementById('cardDistrato').style.display = 'none';
     }
     else if (tipo == 'Parecer Jurídico') {
         document.getElementById('num_direx').style.display = 'none';
@@ -281,6 +285,7 @@ function secFunc(tipo) {
         document.getElementById('ot').style.display = 'none';
         document.getElementById('td').style.display = 'none';
         document.getElementById('cardApost').style.display = 'none';
+        document.getElementById('cardDistrato').style.display = 'none';
     }
     else if (tipo == 'Outros') {
         document.getElementById('num_direx').style.display = 'none';
@@ -302,6 +307,7 @@ function secFunc(tipo) {
         document.getElementById('ot').style.display = 'block';
         document.getElementById('td').style.display = 'none';
         document.getElementById('cardApost').style.display = 'none';
+        document.getElementById('cardDistrato').style.display = 'none';
     }
     else if (tipo == 'Apostilamento') {
         document.getElementById('num_direx').style.display = 'none';
@@ -321,7 +327,28 @@ function secFunc(tipo) {
         document.getElementById('ot').style.display = 'none';
         document.getElementById('td').style.display = 'none';
         document.getElementById('cardApost').style.display = 'block';
+        document.getElementById('cardDistrato').style.display = 'none';
+    }
 
+    else if (tipo == 'Distrato') {
+        document.getElementById('num_direx').style.display = 'none';
+        document.getElementById('dh_direxResolucao').style.display = 'none';
+
+        document.getElementById('tipo_portaria').style.display = 'none';
+        document.getElementById('apostilamento').style.display = 'none';
+        document.getElementById('Portaria').style.display = 'none';
+        document.getElementById('Capacidade').style.display = 'none';
+        document.getElementById('Aditivo').style.display = 'none';
+
+        document.getElementById('ad').style.display = 'none';
+        document.getElementById('pt').style.display = 'none';
+        document.getElementById('rs').style.display = 'none';
+        document.getElementById('act').style.display = 'none';
+        document.getElementById('pj').style.display = 'none';
+        document.getElementById('ot').style.display = 'none';
+        document.getElementById('td').style.display = 'none';
+        document.getElementById('cardApost').style.display = 'none';
+        document.getElementById('cardDistrato').style.display = 'block';
     }
     else {
         document.getElementById('num_direx').style.display = 'none';
@@ -342,6 +369,7 @@ function secFunc(tipo) {
         document.getElementById('pj').style.display = 'none';
         document.getElementById('ot').style.display = 'none';
         document.getElementById('cardApost').style.display = 'none';
+        document.getElementById('cardDistrato').style.display = 'none';
         document.getElementById('td').style.display = 'block';
     }
 }
@@ -487,4 +515,4 @@ function verificaResolucao() {
     }
 
 }
-window.addEventListener('load', verificaResolucao)        
+//window.addEventListener('load', verificaResolucao)        

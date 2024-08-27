@@ -7,7 +7,7 @@ function validateForm(form) {
 
     if (Now_state == 0 || Now_state == 4) {
         dateInsert()
-        //validatesolicitacao()
+        validatesolicitacao()
     }
     if (Now_state == 5) {
         dateInsert()
