@@ -128,19 +128,15 @@ function validateForm(form) {
         var dia2 = dt.getDate()
         if (dia <= 9) { Dia = '0' + dia } else { Dia = dia }
         if (dia2 <= 9) { Dia2 = '0' + dia2 } else { Dia2 = dia2 }
-
         // var dataFinal = [Ano + "-" + Mes + "-" + Dia];
-        var dataFinal2 = [Ano + "-" + Mes + "-" + Dia2];
+        var dataFinal2 = [Ano + "-" + mes + "-" + Dia2];
         var ref = [Ano + "-" + '12' + "-" + '13'];
 
-        if (ref <= dataFinal2) { msg += "<b>Não é possivél enviar uma Solicitação na data atual</b>\n"}
+        //???? PROBLEMA PROS DEVS DE DEZEMBRO ???? if (ref <= dataFinal2) { msg += "<b>Não é possivél enviar uma Solicitação na data atual</b>\n"}
+        
         //if(Hrs > 17 || Hrs < 08){ errorMsg += 'Não é possível solicitar <b>fora do horário de expediente.</b>'+endofline; }
         //errorMsg += "<b>ZZZZZZ</b>"+ dt1 +'  '+ dataFinal+'   '+dataFinal2+'  '+ref +endofline;         
-        // if(form.getValue('slc_FormaPagamento') == '1'){
-        //     if(dataFinal  >= dt1 ){ 
-        //     errorMsg += "<b>É necessário enviar o Pedido, para a UCOF, com no mínimo 5 dias de antecedência referente a Data de Vencimento</b>"+endofline; 
-        //     }     
-        // }
+        
     }
 
     function validatesolicitacao() {
